@@ -1,6 +1,9 @@
 # CodeChef_March21
 Solution of CodeChef March Challenge 2021
 
+
+![](https://media.giphy.com/media/Wsju5zAb5kcOfxJV9i/giphy.gif)
+
 ### Problem no. 1: 
 #### Chef & Group
 ``` 
