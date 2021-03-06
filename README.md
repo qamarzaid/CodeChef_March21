@@ -59,7 +59,7 @@ for i in range(t):
 	l = len(n)
 	solve(n, l)
 ```
-
+![](https://media.giphy.com/media/IbaHSmEeJGqk/giphy.gif)
 ### Problem no. 2: 
 #### No Time To Wait
 
