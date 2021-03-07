@@ -125,7 +125,7 @@ if x+b>=H:
 else:
     print("No")
 ```
-
+![](https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif)
 ### Problem 3:
 #### Space Arrays.
 ```
