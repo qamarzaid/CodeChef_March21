@@ -59,6 +59,27 @@ for i in range(t):
 	l = len(n)
 	solve(n, l)
 ```
+##### Code C++
+
+```c++
+def solve(n, l):
+	c = 0;
+	for i in range(l):
+		if i < l - 1:
+			if (n[i] == '0' and n[i + 1] == '1'):
+				c = c + 1
+	if (n[0] == '1'):
+		c = c + 1
+	print(c)
+
+
+t = int(input())
+
+for i in range(t):
+	n = input()
+	l = len(n)
+	solve(n, l)
+```
 ![](https://media.giphy.com/media/IbaHSmEeJGqk/giphy.gif)
 ### Problem no. 2: 
 #### No Time To Wait
@@ -104,7 +125,7 @@ YES
 ```
 NO
 ```
-##### Code
+##### Code Python
 ```python
 in_put=input()
 text=in_put.split()
@@ -125,6 +146,7 @@ if x+b>=H:
 else:
     print("No")
 ```
+
 ![](https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif)
 ### Problem 3:
 #### Space Arrays.
