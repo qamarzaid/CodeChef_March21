@@ -311,6 +311,8 @@ int main() {
 }
 
 ```
+![](https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif)
+
 ### Problem 4:
 
 #### College Life 4
