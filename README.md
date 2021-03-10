@@ -39,7 +39,7 @@ Subtask #1 (100 points): original constraints
 2
 ```
 
-##### Code
+##### Code Python
 ```python
 def solve(n, l): 
 	c = 0;
@@ -59,6 +59,7 @@ for i in range(t):
 	l = len(n)
 	solve(n, l)
 ```
+##### Code C++
 
 ![](https://media.giphy.com/media/IbaHSmEeJGqk/giphy.gif)
 ### Problem no. 2: 
