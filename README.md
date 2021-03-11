@@ -533,11 +533,58 @@ possibility( N, E, H, A, B, C,z);
 
 return 0;
 }
+       
+```
+### Problem 5:
+#### Paparazzi Gennady
 
+```
+The young but promising paparazzi Gennady wants to finally become famous. To do this, he wants to take a picture of a new super star during her walk in the mountains.
 
-    
-    
-        
+It is known that the star's path in the mountains consists of N sections. For each valid i, the i-th section is a vertical half-open interval with coordinates x=i and y∈[0,hi).
 
+For each valid i and j, our hero can take a picture of the star located in the i-th section of the walk when he is in the j-th section only if he can see the star ― that is, i<j and for each k (i<k<j), the half-open interval that makes up the k-th section must not intersect the line segment [(i,hi),(j,hj)].
+
+Gennady is a paparazzi, not a programmer, so he asks you to determine the maximum distance from which he can take a picture of the star, which is the maximum value of j−i over all pairs (i,j). Help him become famous!
+```
+##### Input
+```
+The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of each test case contains a single integer N.
+The second line contains N space-separated integers h1,h2,…,hN.
+Output
+For each test case, print a single line containing one integer ― the maximum distance.
+```
+##### Constraints
+```
+1≤T≤104
+2≤N≤5⋅105
+1≤hi≤109 for each valid i
+the sum of N over all test cases does not exceed 5⋅105
+```
+##### Subtasks
+```
+Subtask #1 (10 points): the sum of N over all test cases does not exceed 500
+Subtask #2 (10 points): the sum of N over all test cases does not exceed 8,000
+Subtask #3 (80 points): original constraints
+```
+##### Example Input
+```
+4
+2
+1 2
+3
+1 2 3
+7
+3 2 5 3 2 4 3
+8
+1 2 4 3 5 4 2 1
+```
+##### Example Output
+```
+1
+2
+3
+2
 ```
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
