@@ -435,105 +435,57 @@ while(t>0):
 ```c++
 #include<bits/stdc++.h>
 using namespace std;
-void Order(int N,int E,int H,int A,int B,int C,int Z[])
-{
-	int cost=0;
-    for(int i=0;i<3;i++)
-    {
-       // print("cost", "", cost, '' ,"N",N)
-        if (A==Z[i] && N>0)
-        {
-            int O=(E/2);
-            if( O>N)
-            {
-                O=N ;
-            }
-            cost=cost+(O*A); 
-            E=E-(O*2);
-            N=N-O;
-        }    
-        if (B==Z[i] && N>0)
-        {
-            int CM=(H/3);
-            if (CM>N)
-             {   
-             	CM=N; 
-             }
-            cost=cost+(CM*B);
-            H=H-(CM*3);
-           N=N-CM ;
-          }  
-        if (C==Z[i] && N>0)
-           { 
-           	int CC=min(E,H);
-            if (CC>N)
-              {  CC=N;
-              } 
-            cost=cost+CC*C;
-            E=E-CC;
-            H=H-CC;
-            N=N-CC;
-        }
-    }
-    cout<<cost<<endl; 
-
-
-}
-void possibility(int N,int E,int H,int A,int B,int C,int Z[])
-{
-int N1=N;
-int E1=E;
-int H1=H;
-int A1=A;
-int B1=B;
-int C1=C;
-	int Cc=min(E,H);
-	E=E-Cc;
-	H=H-Cc;
-
-	int Cm=(H/3);
-	H=H-(Cm*3);
-
-	int o=(E/2);
-	E=E-(o*2);
-
-	int Final=Cc+Cm+o;
-	if(Final>N)
-	{
-	//	cout<<"Done"<<endl;
-		Order( N1, E1, H1, A1, B1, C1, Z);
-	}
-	else{ cout<<"-1"<<endl;}
-}
-
+#define Int  long long int
+#define endl "\n"
 
 int main()
-{ 
-ios::sync_with_stdio(0);
-cin.tie(0);
-
-int T,N,E,H,A,B,C;
-cin>>T;
-int z[3];
-while(T--> 0)
 {
-cin>>N>>E>>H>>A>>B>>C;
-
- z[0]= A;
- z[1] = B;
- z[2] = C;
-sort(z,z+3);
-// for(int i=0;i<3;i++)
-// {
-// 	cout<<z[i]<<" ";
-// }
-possibility( N, E, H, A, B, C,z);
-
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		Int  N, E, H, A, B, C;
+		cin>>N>>E>>H>>A>>B>>C;
+		vector<Int > ans;
+		vector<Int > v;
+		for(int i=0;i<=N+1;i++)
+		{
+			v.push_back(i);
+		}
+		for(Int  i =0; i<=N; i++)
+		{
+			Int  x1 = lower_bound(v.begin(), v.end(), (2*N-E-2*i))-v.begin();
+			Int  x2 = upper_bound(v.begin(), v.end(), (H-3*i))-v.begin()-1;
+			if(x2<x1 || x1==N+1)
+			continue;
+			if(x2==N+1 && x2+3*i>H)
+			continue;
+			Int  y;
+			if(C>A)
+			y = (x1<(N-i)?x1:(N-i));
+			else
+			y = (x2<(N-i)?x2:(N-i));
+			Int  x = N-y-i;
+			if(y+2*i>=2*N-E && y+3*i<=H)
+			{
+				ans.push_back(A*x+B*i+C*y);
+			}
+		}
+		if(ans.size()==0)
+		cout<<"-1"<<endl;
+		else
+		{
+			Int  min = ans[0];
+			for(Int  i = 0;i<ans.size();i++)
+			{
+				if(ans[i]<min)
+				min = ans[i];
+			}
+			cout<<min<<endl;
+		}
+	}
+	return 0;
 }
-
-return 0;
-}
-       
 ```
 ### Problem 5:
 #### Paparazzi Gennady
