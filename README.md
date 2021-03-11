@@ -487,6 +487,7 @@ int main()
 	return 0;
 }
 ```
+![](https://media.giphy.com/media/wvQIqJyNBOCjK/giphy.gif)
 ### Problem 5:
 #### Paparazzi Gennady
 
