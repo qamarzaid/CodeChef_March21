@@ -596,26 +596,33 @@ int main()
 You are given an integer C. Let d be the smallest integer such that 2d is strictly greater than C.
 
 Consider all pairs of non-negative integers (A,B) such that A,B<2d and A⊕B=C (⊕ denotes the bitwise XOR operation). Find the maximum value of A⋅B over all these pairs.
-
-Input
+```
+##### Input
+```
 The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
 The first and only line of each test case contains a single integer C.
 Output
 For each test case, print a single line containing one integer ― the maximum possible product A⋅B.
-
-Constraints
+```
+##### Constraints
+```
 1≤T≤105
 1≤C≤109
 Subtasks
 Subtask #1 (30 points): 1≤C≤103
 Subtask #2 (70 points): original constraints
-
-Example Input
+```
+##### Example Input
+```
 2
 13
 10
-Example Output
+```
+##### Example Output
+```
 70
 91
+```
+##### Code
 ```
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
