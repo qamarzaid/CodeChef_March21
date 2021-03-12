@@ -590,7 +590,7 @@ int main()
     return 0;
 }
 ```
-![](https://media.giphy.com/media/Q7SKqn3G97xpmfSOvG/giphy.gif)
+![](https://https://media.giphy.com/media/12BYUePgtn7sis/giphy.gif)
 ### Problem 6
 #### Interesting XOR
 ```
