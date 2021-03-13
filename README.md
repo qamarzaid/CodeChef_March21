@@ -661,4 +661,7 @@ int main() {
 	return 0;
 }
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/ixor#main.cpp)
+
+
 ![](https://media.giphy.com/media/PiQejEf31116URju4V/giphy.gif)
