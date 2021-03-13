@@ -59,7 +59,7 @@ for i in range(t):
 	l = len(n)
 	solve(n, l)
 ```
-##### Code C++
+[Code Demo Link](https://replit.com/@ZaidQamar/chef#main.py)
 
 ![](https://media.giphy.com/media/IbaHSmEeJGqk/giphy.gif)
 ### Problem no. 2: 
@@ -127,6 +127,7 @@ if x+b>=H:
 else:
     print("No")
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/space-array#main.py)
 ##### Code C++
 
 ```c++
@@ -163,7 +164,7 @@ int main()
     }
 }
 ```
-
+[Code Demo Link](https://replit.com/@ZaidQamar/notime#main.cpp) 
 ![](https://media.giphy.com/media/3oz8xAFtqoOUUrsh7W/giphy.gif)
 ### Problem 3:
 #### Space Arrays.
@@ -253,6 +254,7 @@ for i in range (T):
    # print(a)
     solve(a, N)
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/Space#main.py)
 ##### Code in C++
 
 ```c++
@@ -312,6 +314,8 @@ int main() {
 }
 
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/space#main.cpp)
+
 ![](https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif)
 
 ### Problem 4:
