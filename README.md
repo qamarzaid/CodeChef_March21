@@ -434,6 +434,7 @@ while(t>0):
     
     Possiblity(N,E,H,A,B,C)
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/collge#main.py)
 
 ##### Code C++
 ```c++
