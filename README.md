@@ -597,6 +597,7 @@ int main()
     return 0;
 }
 ```
+[Code Demo Link](https://replit.com/@ZaidQamar/paparazzi#main.cpp)
 ![](https://media.giphy.com/media/12BYUePgtn7sis/giphy.gif)
 ### Problem 6
 #### Interesting XOR
