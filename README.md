@@ -487,6 +487,8 @@ int main()
 	return 0;
 }
 ```
+[Code Demo link](https://repl.it/@ZaidQamar/college-1#main.cpp)
+
 ![](https://media.giphy.com/media/wvQIqJyNBOCjK/giphy.gif)
 ### Problem 5:
 #### Paparazzi Gennady
