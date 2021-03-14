@@ -79,7 +79,7 @@ Now Chef finally decides to use his special power which he has gained through ye
 He can travel back in time when he concentrates. Specifically, his power allows him to travel to N different time zones,
 which are T1,T2,…,TN hours respectively behind his current time.
 
-Find out whether Chef can use one of the available time zones to solve the problem and submit it before the contest ends.
+Find out whether Chef can use one of the available time zones to solve the problem and submit before the contest ends.
 ```
 ##### Input
 ```
@@ -187,16 +187,21 @@ The rules of the game are as follows:
 Initially, a sequence a1,a2,…,aN is given.
 The players alternate turns.
 In each turn, the current player must choose an index i and increment ai, i.e. change ai to ai+1.
-Afterwards, if there is no permutation p1,p2,…,pN of the integers 1 through N such that ai≤pi holds for each valid i, the current player loses.
+Afterwards, if there is no permutation p1,p2,…,pN of the integers 1 through N 
+such that ai≤pi holds for each valid i, the current player loses.
 Otherwise, the game continues with the next turn.
-Madoka is asking you to help her ― tell her if the first player (the player that plays in the first turn) or second player wins this game if both play optimally.
-
-Input
-The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+Madoka is asking you to help her ― tell her if the first player 
+(the player that plays in the first turn) or second player wins this game if both play optimally.
+```
+##### Input
+```
+The first line of the input contains a single integer T denoting the number of test cases.
+The description of T test cases follows.
 The first line of each test case contains a single integer N.
 The second line contains N space-separated integers a1,a2,…,aN.
 Output
-For each test case, print a single line containing the string "First" if the first player wins or "Second" if the second player wins (without quotes).
+For each test case, print a single line containing the string "First" if the first player 
+wins or "Second" if the second player wins (without quotes).
 ```
 ##### Constraints
 ```
@@ -333,23 +338,30 @@ int main() {
 
 #### College Life 4
 ```
-Chef and N−1 more of his friends go to the night canteen. The canteen serves only three items (well, they serve more, but only these three are edible!), which are omelette, chocolate milkshake, and chocolate cake. Their prices are A, B and C respectively.
+Chef and N−1 more of his friends go to the night canteen. The canteen serves only three items 
+(well, they serve more, but only these three are edible!), which are omelette, chocolate milkshake,
+and chocolate cake. Their prices are A, B and C respectively.
 
-However, the canteen is about to run out of some ingredients. In particular, they only have E eggs and H chocolate bars left. They need:
+However, the canteen is about to run out of some ingredients. In particular, 
+they only have E eggs and H chocolate bars left. They need:
 
 2 eggs to make an omelette
 3 chocolate bars for a chocolate milkshake
 1 egg and 1 chocolate bar for a chocolate cake
-Each of the N friends wants to order one item. They can only place an order if the canteen has enough ingredients to prepare all the ordered items. Find the smallest possible total price they have to pay or determine that it is impossible to prepare N items.
+Each of the N friends wants to order one item. They can only place an order if
+the canteen has enough ingredients to prepare all the ordered items.
+Find the smallest possible total price they have to pay or determine that it is impossible to prepare N items.
 ```
 ##### Input
 ```
-The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of the input contains a single integer T denoting the number of test cases. 
+The description of T test cases follows.
 The first and only line of each test case contains six space-separated integers N, E, H, A, B and C.
 ```
 ##### Output
 ```
-For each test case, print a single line containing one integer ― the minimum cost of N items, or −1 if it is impossible to prepare N items.
+For each test case, print a single line containing one integer ― 
+the minimum cost of N items, or −1 if it is impossible to prepare N items.
 ```
 ##### Constraints
 ```
