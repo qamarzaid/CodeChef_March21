@@ -616,10 +616,8 @@ int main()
         {
             while(st.size()>=2)
             {
-                double s1 = ((double)st[sz-1].second -(double)st[sz-2].second)/
-		((double)st[sz-1].first-(double)st[sz-2].first);
-                double s2 = ((double)p[i].second-(double)st[sz-1].second)/
-		((double)p[i].first-(double)st[sz-1].first);
+        double s1 = ((double)st[sz-1].second -(double)st[sz-2].second)/((double)st[sz-1].first-(double)st[sz-2].first);
+	double s2 = ((double)p[i].second-(double)st[sz-1].second)/((double)p[i].first-(double)st[sz-1].first);
                 if(s1 <= s2)
                 {
                     st.pop_back();sz--;
@@ -642,11 +640,13 @@ int main()
 ```
 You are given an integer C. Let d be the smallest integer such that 2d is strictly greater than C.
 
-Consider all pairs of non-negative integers (A,B) such that A,B<2d and A⊕B=C (⊕ denotes the bitwise XOR operation). Find the maximum value of A⋅B over all these pairs.
+Consider all pairs of non-negative integers (A,B) such that A,B<2d and A⊕B=C 
+(⊕ denotes the bitwise XOR operation). Find the maximum value of A⋅B over all these pairs.
 ```
 ##### Input
 ```
-The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of the input contains a single integer T denoting the number of test cases. 
+The description of T test cases follows.
 The first and only line of each test case contains a single integer C.
 Output
 For each test case, print a single line containing one integer ― the maximum possible product A⋅B.
