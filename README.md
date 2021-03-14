@@ -180,7 +180,8 @@ int main()
 ### Problem 3:
 #### Space Arrays.
 ```
-Finally, progress reached the Madoka family and she decided to play with her little sister in the sensational game Space Arrays.
+Finally, progress reached the Madoka family and she decided to play with her little sister in the sensational game 
+Space Arrays.
 
 The rules of the game are as follows:
 
@@ -331,6 +332,8 @@ int main() {
 
 ```
 [Code Demo Link](https://replit.com/@ZaidQamar/space#main.cpp)
+
+
 
 ![](https://media.giphy.com/media/RbDKaczqWovIugyJmW/giphy.gif)
 
@@ -517,22 +520,31 @@ int main()
 ```
 [Code Demo link](https://repl.it/@ZaidQamar/college-1#main.cpp)
 
+
 ![](https://media.giphy.com/media/wvQIqJyNBOCjK/giphy.gif)
 ### Problem 5:
 #### Paparazzi Gennady
 
 ```
-The young but promising paparazzi Gennady wants to finally become famous. To do this, he wants to take a picture of a new super star during her walk in the mountains.
+The young but promising paparazzi Gennady wants to finally become famous. 
+To do this, he wants to take a picture of a new super star during her walk in the mountains.
 
-It is known that the star's path in the mountains consists of N sections. For each valid i, the i-th section is a vertical half-open interval with coordinates x=i and y∈[0,hi).
+It is known that the star's path in the mountains consists of N sections. For each valid i,
+the i-th section is a vertical half-open interval with coordinates x=i and y∈[0,hi).
 
-For each valid i and j, our hero can take a picture of the star located in the i-th section of the walk when he is in the j-th section only if he can see the star ― that is, i<j and for each k (i<k<j), the half-open interval that makes up the k-th section must not intersect the line segment [(i,hi),(j,hj)].
+For each valid i and j, our hero can take a picture of the star located in the i-th 
+section of the walk when he is in the j-th section only if he can see the star ― 
+that is, i<j and for each k (i<k<j), the half-open interval that makes up the k-th
+section must not intersect the line segment [(i,hi),(j,hj)].
 
-Gennady is a paparazzi, not a programmer, so he asks you to determine the maximum distance from which he can take a picture of the star, which is the maximum value of j−i over all pairs (i,j). Help him become famous!
+Gennady is a paparazzi, not a programmer, so he asks you to determine the maximum 
+distance from which he can take a picture of the star, which is the maximum value 
+of j−i over all pairs (i,j). Help him become famous!
 ```
 ##### Input
 ```
-The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.
+The first line of the input contains a single integer T denoting the number of test cases.
+The description of T test cases follows.
 The first line of each test case contains a single integer N.
 The second line contains N space-separated integers h1,h2,…,hN.
 Output
@@ -604,8 +616,10 @@ int main()
         {
             while(st.size()>=2)
             {
-                double s1 = ((double)st[sz-1].second -(double)st[sz-2].second)/((double)st[sz-1].first-(double)st[sz-2].first);
-                double s2 = ((double)p[i].second-(double)st[sz-1].second)/((double)p[i].first-(double)st[sz-1].first);
+                double s1 = ((double)st[sz-1].second -(double)st[sz-2].second)/
+		((double)st[sz-1].first-(double)st[sz-2].first);
+                double s2 = ((double)p[i].second-(double)st[sz-1].second)/
+		((double)p[i].first-(double)st[sz-1].first);
                 if(s1 <= s2)
                 {
                     st.pop_back();sz--;
@@ -621,6 +635,7 @@ int main()
 }
 ```
 [Code Demo Link](https://replit.com/@ZaidQamar/paparazzi#main.cpp)
+
 ![](https://media.giphy.com/media/12BYUePgtn7sis/giphy.gif)
 ### Problem 6
 #### Interesting XOR
